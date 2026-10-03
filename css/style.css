@@ -1,0 +1,70 @@
+/* Värit */
+:root {
+    --tausta: #121212;
+    --pinta: #1e1e1e;
+    --teksti: #e0e0e0;
+    --paavari: #00d4ff;
+    --korostus: #ff9f1c;
+    --reuna: #333333;
+}
+
+body {
+    background-color: var(--tausta);
+    color: var(--teksti);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Header ja footer */
+header {
+    padding: 20px;
+    border-bottom: 2px solid var(--paavari);
+}
+
+footer {
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid var(--paavari);
+}
+
+/* Otsikot */
+h1 {
+    color: var(--paavari);
+}
+
+h2 {
+    color: var(--paavari);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--korostus);
+}
+
+/* Osiot */
+section, article, aside {
+    background-color: var(--pinta);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid var(--reuna);
+}
+
+/* Kappaleet */
+p {
+    margin-bottom: 15px;
+}
+
+/* Listat */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Linkit */
+a {
+    color: var(--paavari);
+}
+
+a:hover {
+    color: var(--korostus);
+}
