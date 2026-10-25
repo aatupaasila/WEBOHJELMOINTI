@@ -4,40 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freestyle vs. Cinematic - FPV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Rajdhani:wght@600;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Freestyle vs. Cinematic</h1>
-        <p>Harrastuksen kaksi ääripäätä: temppuilu ja elokuvamainen kuvaaminen.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="tekniikka.html">Tekniikka</a></li>
-                <li><a href="diy_vs_bnf.html">DIY vs. BNF</a></li>
-                <li><a href="fs_vs_cine.html">Freestyle vs. Cinematic</a></li>
-            </ul>
-        </nav>
+        <div class="ylapalkki">
+            <h1>Freestyle vs. Cinematic</h1>
+            <p>Harrastuksen kaksi ääripäätä: temppuilu ja elokuvamainen kuvaaminen.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="tekniikka.html">Tekniikka</a></li>
+                    <li><a href="diy_vs_bnf.html">DIY vs. BNF</a></li>
+                    <li><a href="fs_vs_cine.html" class="aktiivinen">Freestyle vs. Cinematic</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Freestyle</h2>
-            <p>
-                Tähän tulee myöhemmin esittely freestyle-lentämisestä, kuvia drooneista ja videota. Tästä löytyy videoita omasta takaa.
-            </p>
-        </section>
+        <img class="paakuva koko-leveys" src="images/fpv-ja-cine.jpg" alt="Pieni FPV-drooni ja DJI Mavic -kameradrooni vierekkäin kalliolla"
+             width="800" height="400" fetchpriority="high" loading="eager">
 
-        <section>
-            <h2>Cinematic</h2>
-            <p>
-                Tähän tulee myöhemmin esittely cinematic-lentämisestä, kuvia drooneista ja videota.
-            </p>
-        </section>
+        <div class="sisalto">
+            <section id="freestyle">
+                <h2>Freestyle</h2>
+                <img src="images/freestyle.jpg" alt="Pieni FPV-drooni lennossa puiden edessä"
+                     width="1200" height="600" loading="lazy">
+                <p>
+                    Tähän tulee myöhemmin esittely freestyle-lentämisestä, kuvia drooneista ja videota. Tästä löytyy videoita omasta takaa.
+                </p>
+            </section>
+
+            <section id="cinematic">
+                <h2>Cinematic</h2>
+                <img src="images/cinematic.jpg" alt="Kameradrooni lentää kaupungin ja joen yllä iltahämärässä"
+                     width="1200" height="600" loading="lazy">
+                <p>
+                    Tähän tulee myöhemmin esittely cinematic-lentämisestä, kuvia drooneista ja videota.
+                </p>
+            </section>
+        </div>
+
+        <aside>
+            <h2>Tällä sivulla</h2>
+            <ul>
+                <li><a href="#freestyle">Freestyle</a></li>
+                <li><a href="#cinematic">Cinematic</a></li>
+            </ul>
+        </aside>
     </main>
 
     <footer>
-        <p>&copy; 2026 Aatu Paasila – Webohjelmointi, Centria</p>
+        <div class="alapalkki">
+            <p>&copy; 2026 Aatu Paasila – Webohjelmointi, Centria</p>
+            <p>Kuvat: <a href="https://unsplash.com/photos/9k-JMNNGNv0">RedCharlie</a>, <a href="https://unsplash.com/photos/n5dUO8RlEms">Benedikt Zinn</a>, <a href="https://unsplash.com/photos/e3hH6_pSk1g">Jerry Kavan</a> / Unsplash</p>
+        </div>
     </footer>
 </body>
 </html>

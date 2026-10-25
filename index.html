@@ -4,38 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FPV - näkymä ilmasta käsin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Rajdhani:wght@600;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>FPV - näkymä ilmasta käsin</h1>
-        <p>Ensimmäisen persoonan drone-lentäminen: kamera droneen, kuva suoraan laseihin.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="tekniikka.html">Tekniikka</a></li>
-                <li><a href="diy_vs_bnf.html">DIY vs. BNF</a></li>
-                <li><a href="fs_vs_cine.html">Freestyle vs. Cinematic</a></li>
-            </ul>
-        </nav>
+        <div class="ylapalkki">
+            <h1>FPV - näkymä ilmasta käsin</h1>
+            <p>Ensimmäisen persoonan drone-lentäminen: kamera droneen, kuva suoraan laseihin.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="aktiivinen">Etusivu</a></li>
+                    <li><a href="tekniikka.html">Tekniikka</a></li>
+                    <li><a href="diy_vs_bnf.html">DIY vs. BNF</a></li>
+                    <li><a href="fs_vs_cine.html">Freestyle vs. Cinematic</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Mikä FPV on?</h2>
-            <p>
-                FPV eli First Person View tarkoittaa lentämistä droonin kameran näkökulmasta.
-                Kuva lähetetään droonista suoraan FPV-laseihin tai näyttöön reaaliajassa, mikä tekee
-                lentämisestä hyvin immersiivistä.
-            </p>
-        </section>
+        <img class="paakuva koko-leveys" src="images/hero.jpg" alt="Drooni lentää korkeiden puiden välissä alhaalta päin kuvattuna"
+             width="1000" height="500" fetchpriority="high" loading="eager">
 
-        <article>
-            <h2>Miksi kiinnostuin tästä harrastuksesta</h2>
-            <p>
-                Tähän tulee myöhemmin oma tarina siitä, miten löysin harrastuksen.
-            </p>
-        </article>
+        <div class="sisalto">
+            <section>
+                <h2>Mikä FPV on?</h2>
+                <p>
+                    FPV eli First Person View tarkoittaa lentämistä droonin kameran näkökulmasta.
+                    Kuva lähetetään droonista suoraan FPV-laseihin tai näyttöön reaaliajassa, mikä tekee
+                    lentämisestä hyvin immersiivistä.
+                </p>
+            </section>
+
+            <article>
+                <h2>Miksi kiinnostuin tästä harrastuksesta</h2>
+                <p>
+                    Tähän tulee myöhemmin oma tarina siitä, miten löysin harrastuksen.
+                </p>
+            </article>
+        </div>
 
         <aside>
             <h2>Tiesitkö?</h2>
@@ -45,18 +55,39 @@
             </p>
         </aside>
 
-        <section>
+        <section class="koko-leveys">
             <h2>Tutustu tarkemmin</h2>
-            <ul>
-                <li><a href="tekniikka.html">Tekniikka</a> – miten FPV toimii teknisesti</li>
-                <li><a href="diy_vs_bnf.html">DIY vs. BNF</a> – rakenna itse vai osta valmis</li>
-                <li><a href="fs_vs_cine.html">Freestyle vs. Cinematic</a> – harrastuksen kaksi ääripäätä</li>
-            </ul>
+            <div class="kortit">
+                <article class="kortti">
+                    <img src="images/ohjain.jpg" alt="Radio-ohjaimen punaiset ohjaussauvat ja kytkimet lähikuvassa"
+                         width="1200" height="600" loading="lazy">
+                    <h3>Tekniikka</h3>
+                    <p>Miten FPV toimii teknisesti.</p>
+                    <a href="tekniikka.html">Lue lisää</a>
+                </article>
+                <article class="kortti">
+                    <img src="images/rakentaminen.jpg" alt="FPV-droonia juotetaan kasaan työpöydällä"
+                         width="800" height="400" loading="lazy">
+                    <h3>DIY vs. BNF</h3>
+                    <p>Rakenna itse vai osta valmis.</p>
+                    <a href="diy_vs_bnf.html">Lue lisää</a>
+                </article>
+                <article class="kortti">
+                    <img src="images/fpv-ja-cine.jpg" alt="Pieni FPV-drooni ja DJI Mavic -kameradrooni vierekkäin kalliolla"
+                         width="800" height="400" loading="lazy">
+                    <h3>Freestyle vs. Cinematic</h3>
+                    <p>Harrastuksen kaksi ääripäätä.</p>
+                    <a href="fs_vs_cine.html">Lue lisää</a>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Aatu Paasila – Webohjelmointi, Centria</p>
+        <div class="alapalkki">
+            <p>&copy; 2026 Aatu Paasila – Webohjelmointi, Centria</p>
+            <p>Kuvat: <a href="https://unsplash.com/photos/Ve7iqUNkGsA">Kyle Loftus</a>, <a href="https://unsplash.com/photos/W6mpHqbuEeQ">Pawel Spychalski</a>, <a href="https://unsplash.com/photos/3PJNIvkf-Tw">Yulii Shtel</a>, <a href="https://unsplash.com/photos/9k-JMNNGNv0">RedCharlie</a> / Unsplash</p>
+        </div>
     </footer>
 </body>
 </html>
