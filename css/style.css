@@ -78,9 +78,13 @@ a:hover {
 }
 
 /* yläpalkki */
+/* position: sticky = header pysyy ruudun yläreunassa kun sivua vieritetään */
 header {
     background-color: var(--pinta);
     border-bottom: 2px solid var(--paavari);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .ylapalkki {
@@ -171,6 +175,15 @@ aside h2 {
 main img {
     display: block;
     border-radius: 8px;
+}
+
+/* video skaalautuu osion leveyteen, ei mene yli reunan mobiilissa */
+main video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
 }
 
 /* sivun yläkuva koko leveydelle */
