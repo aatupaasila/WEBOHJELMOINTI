@@ -90,6 +90,41 @@
                 </article>
             </div>
         </section>
+
+        <section class="koko-leveys">
+            <h2>Kysy FPV-harrastuksesta</h2>
+            <p id="kiitos" class="kiitos">Lomake on täytetty oikein. Tämä on demo, joten kysymystä ei toimitettu kenellekään.</p>
+            <form class="lomake" action="index.html#kiitos" method="get">
+                <p>Tähdellä (*) merkityt kentät ovat pakollisia.</p>
+
+                <label for="nimi">Nimi *</label>
+                <input type="text" id="nimi" name="nimi" required minlength="2" maxlength="50">
+
+                <label for="sahkoposti">Sähköposti *</label>
+                <input type="email" id="sahkoposti" name="sahkoposti" required maxlength="100">
+
+                <fieldset>
+                    <legend>Kokemus FPV-lentämisestä *</legend>
+                    <label><input type="radio" name="kokemus" value="ei" required> En ole lentänyt</label>
+                    <label><input type="radio" name="kokemus" value="simulaattori"> Simulaattorissa</label>
+                    <label><input type="radio" name="kokemus" value="drooni"> Oikealla droonilla</label>
+                </fieldset>
+
+                <label for="aihe">Aihe *</label>
+                <select id="aihe" name="aihe" required>
+                    <option value="">Valitse aihe</option>
+                    <option value="aloitus">Harrastuksen aloittaminen</option>
+                    <option value="tekniikka">Tekniikka</option>
+                    <option value="diy-bnf">DIY vai BNF</option>
+                    <option value="lentotyylit">Lentotyylit</option>
+                </select>
+
+                <label for="kysymys">Kysymys * (10–500 merkkiä)</label>
+                <textarea id="kysymys" name="kysymys" rows="5" required minlength="10" maxlength="500"></textarea>
+
+                <button type="submit">Lähetä kysymys</button>
+            </form>
+        </section>
     </main>
 
     <footer>

@@ -209,6 +209,101 @@ section img {
     margin-bottom: 15px;
 }
 
+/* taulukko: kapealla ruudulla vierii kehyksen sisällä */
+.sisalto,
+.sisalto > section {
+    min-width: 0;
+}
+
+.taulukko-kehys {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding-bottom: 10px;
+    color: var(--teksti-himmea);
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--reuna);
+    text-align: left;
+    vertical-align: top;
+}
+
+thead th {
+    background-color: var(--pinta-2);
+    color: var(--paavari);
+}
+
+/* lomake (flexbox): kentät allekkain */
+.lomake {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+}
+
+.lomake input,
+.lomake select,
+.lomake textarea {
+    padding: 10px;
+    border: 1px solid var(--teksti-himmea);
+    border-radius: 8px;
+    background-color: var(--pinta-2);
+    color: var(--teksti);
+    font: inherit;
+}
+
+.lomake textarea {
+    resize: vertical;
+}
+
+.lomake fieldset {
+    margin: 10px 0;
+    border: 1px solid var(--teksti-himmea);
+    border-radius: 8px;
+}
+
+.lomake fieldset label {
+    display: block;
+}
+
+.lomake input[type="radio"] {
+    accent-color: var(--paavari);
+}
+
+.lomake button {
+    align-self: flex-start;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--paavari);
+    color: var(--tausta);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* :target = näkyy, kun osoitteen lopussa on #kiitos */
+.kiitos {
+    display: none;
+    padding: 10px;
+    border: 2px solid var(--korostus);
+    scroll-margin-top: 260px; /* ettei jää sticky-headerin alle */
+}
+
+.kiitos:target {
+    display: block;
+}
+
 /* alapalkki (flexbox) */
 footer {
     margin-top: 30px;
